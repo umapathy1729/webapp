@@ -4,15 +4,27 @@
   <groupId>lu.amazon.aws.demo</groupId>
   <artifactId>WebApp</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.1</version>
   <name>aarvitex WebApp</name>
   <url>http://maven.apache.org</url>
+
+  <distributionManagement>
+    <snapshotRepository>
+        <id>maven-snapshots</id>
+        <url>http://3.90.226.93:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+        <id>maven-releases</id>
+        <url>http://3.90.226.93:8081/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>
+
   <dependencies>
     <dependency>
       <groupId>org.sonarsource.scanner.maven</groupId>
       <artifactId>sonar-maven-plugin</artifactId>
-      <version>3.10.0.2594</version>
-    </dependency>   
+      <version>4.0.0.4121</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -32,9 +44,11 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                  http://18.118.254.221:9000
+                  http://3.90.226.93:9000
                 </sonar.host.url>
-            </properties>
+                <java.version>17</java.version>
+
+</properties>
         </profile>
-   </profiles>  
+   </profiles>
 </project>
