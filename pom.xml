@@ -44,7 +44,7 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                  http://:3.148.196.151:9000
+                  http://3.148.196.151:9000
                 </sonar.host.url>
                 <java.version>17</java.version>
 
