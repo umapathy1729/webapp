@@ -23,7 +23,7 @@
     <dependency>
       <groupId>org.sonarsource.scanner.maven</groupId>
       <artifactId>sonar-maven-plugin</artifactId>
-      <version>4.0.0.4121</version>
+      <version>3.10.0.2594</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -44,7 +44,7 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                  http://3.90.226.93:9000
+                  http://:3.148.196.151:9000
                 </sonar.host.url>
                 <java.version>17</java.version>
 
